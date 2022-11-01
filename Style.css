@@ -1,0 +1,203 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto' , sans-serif;
+}
+
+body {
+	height: 100%;
+}
+
+
+a {
+	color: #fff !important;
+	text-decoration: none;
+}
+.container{
+	width: 100%;
+	min-height: 100vh; 
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/Coffe\ Shop.jpg);
+	background-position: center;
+	background-size: cover;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+}
+.navbar{
+	height: 12%;	
+	display: contents;
+	align-items: center;
+}
+.logo{
+	 width: 100px;
+	 margin-top: 10px;
+	 margin-left: -100px;
+	 cursor: pointer;
+	 transition: 0.5s;	 
+}
+.logo:hover{
+	transform: translateY(10px);
+}
+.menu-icon{
+	width: 40px;
+	cursor: pointer;
+	margin-right: 40px;
+	transition: 0.5s;	
+}
+.menu-icon:hover{
+	transform: translateX(-7px);
+}
+.navbar{
+	width: 100%;
+	height: auto;
+	margin-left: 100px;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 100px;
+	position: relative;
+}
+.navbar ul li a{
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+}	
+.navbar ul li ::after{
+	content: "";
+	height: 3px;
+	width: 0;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	transition: 0.5s;
+}
+.navbar ul li :hover:after{
+	width: 100%;
+}
+
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+.col{
+	flex-basis: 50%;
+}
+h1{
+	color: #fff;
+	font-size: 70px;
+}
+p{
+	color: #fff;
+	font-size: 11px;
+	line-height: 17px;
+}
+
+button{
+	width: 180px;
+	margin: 10px 5px;
+	margin-left: -15px;
+	text-align: center;
+	color: #fff !important;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 0;
+	background: transparent;
+	cursor: pointer;
+	border: 2px solid #009880;
+	border-radius: 30px;
+	position: relative;
+	overflow: hidden;
+}
+span{
+	background: #009880;
+	height: 100%;
+	width: 0;
+	border-radius: 25px;
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+button:hover{
+	transform: translateY(5px);
+	background: linear-gradient( to bottom right, #a22884, #4a50fd);
+}
+.card1{ 
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 28px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/Espresso.jpg);
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+.card2{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/Cappuccino.jpg);
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+.card3{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/Cafe\ Latte.jpg);
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+.card4{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 35px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/Traditional\ Coffee.jpg);
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+
+.card:hover:hover{
+	transform: translateY(-10px);
+}
+h5{
+	color: #fff;
+	text-shadow: 0 0 5px #999;
+}
+.card p{
+	color: #fff;
+	text-shadow: 0 0 15px #000;
+}
+
